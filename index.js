@@ -5,13 +5,20 @@ class Car {
         this.model = model;
         this.year = year;
     }
+
     honk(){
         console.log("BEEP BEEP!")
     }
 
-    performanceMaintenance() {setTimeout(function() {
+    performMaintenance() {setTimeout(function() {
     console.log("maintenance complete")
-  }, 3000);
+    }, 3000);
+    }
 }
 
-}
+var mySweetRide = new Car('Pontiac', 'Fiero', 1988)
+mySweetRide.honk()
+mySweetRide.performMaintenance()
+
+//var dinner = new Pasta('lasagna')
+//dinner.eat()
